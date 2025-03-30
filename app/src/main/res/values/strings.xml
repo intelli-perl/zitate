@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">android-fortune App</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="action_about">Über</string>
+    <string name="action_share">Teilen</string>
+    <string name="about_text">Diese App steht unter MIT Lizenz, stammt im Original von Nicolas Hurtubise und wurde von Chris Ahrend weiterentwickelt.</string>
+    <string name="add_widget">Add widget</string>
+    <string name="previous_fortune"> ← </string>
+    <string name="next_fortune"> → </string>
+    <string name="tldr">Kurze Verse</string>
+    <string name="general_preferences">Files_0</string>
+</resources>
