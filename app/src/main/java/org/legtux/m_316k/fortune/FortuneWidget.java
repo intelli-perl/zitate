@@ -13,23 +13,17 @@ public class FortuneWidget extends AppWidgetProvider {
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
         // There may be multiple widgets active, so update all of them
         final int N = appWidgetIds.length;
-        for (int i = 0; i < N; i++) {
-            updateAppWidget(context, appWidgetManager, appWidgetIds[i]);
-        }
+        for (int i = 0; i < N; i++) { updateAppWidget(context, appWidgetManager, appWidgetIds[i]); }
     }
 
     @Override
-    public void onDeleted(Context context, int[] appWidgetIds) {
-        Toast.makeText(context, "This makes me a sad panda", Toast.LENGTH_LONG).show();
-    }
+    public void onDeleted(Context context, int[] appWidgetIds) { Toast.makeText(context, R.string.del_widget, Toast.LENGTH_LONG).show(); }
 
     @Override
-    public void onEnabled(Context context) {
-    }
+    public void onEnabled(Context context) {}
 
     @Override
     public void onDisabled(Context context) {
-        // Enter relevant functionality for when the last widget is disabled
     }
 
     static void updateAppWidget(Context context, AppWidgetManager appWidgetManager, int appWidgetId) {
@@ -37,7 +31,7 @@ public class FortuneWidget extends AppWidgetProvider {
 
         // Construct the RemoteViews object
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.fortune_widget);
-        views.setTextViewText(R.id.fortune_widget_text, Fortune.instance(true).current());
+        views.setTextViewText(R.id.fortune_widget_text, Fortune.instance().getCurrent()); //changed by ChatGPT:true).current());
 
         // Instruct the widget manager to update the widget
         appWidgetManager.updateAppWidget(appWidgetId, views);

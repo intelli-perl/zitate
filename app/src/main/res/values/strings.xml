@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">android-fortune App</string>
+    <string name="app_name">Aletheia</string>
     <string name="action_settings">Einstellungen</string>
     <string name="action_about">Über</string>
     <string name="action_share">Teilen</string>
     <string name="about_text">Diese App steht unter MIT Lizenz, stammt im Original von Nicolas Hurtubise und wurde von Chris Ahrend weiterentwickelt.</string>
-    <string name="add_widget">Add widget</string>
+    <string name="add_widget">Widget hinzufügen</string>
+    <string name="del_widget">Widget entfernt</string>
     <string name="previous_fortune"> ← </string>
     <string name="next_fortune"> → </string>
-    <string name="tldr">Kurze Verse</string>
-    <string name="general_preferences">Files_0</string>
+    <string name="quit_app">Beenden</string>
+    <string name="ok_button">OK</string>
+    <string name="choose_category">-- Bitte Kategorie wählen --</string>
+    <string name="reload_files">-- Einträge neu laden --</string>
+    <string name="fortune_files_directory">/Download/fortunes</string>
+    <string name="permission_required">Lese-Berechtigung benötigt</string>
+    <string name="entry_limit_reached">Max. Anzahl an Einträgen erreicht, ignoriere den Rest.</string>
 </resources>
